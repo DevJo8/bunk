@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat with Bonk</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="chat-container">
+            <div class="chat-header">
+                <h1>Talk with Bonk!</h1>
+                <div class="dog-avatar">
+                    <img src="bonkog_800.18d79e1cea6b283f2ee7.png" alt="Bonk">
+                </div>
+            </div>
+            
+            <div class="contract-section">
+                <div class="contract-address-container">
+                    <span class="label">Contract Address (CA):</span>
+                    <input type="text" id="contract-address" value="7G4gszyHDmphJZijnUnoTuUKrsaKM8t8Je9KwzsSbonk" readonly>
+                    <button id="copy-address" title="Copy to clipboard">
+                        <i class="fas fa-copy"></i>
+                    </button>
+                </div>
+                <a href="https://x.com/GPTBONK" target="_blank" class="twitter-button">
+                    <i class="fab fa-twitter"></i> Follow ChatBonk
+                </a>
+            </div>
+            
+            <div class="elevenlabs-banner">
+                <div class="elevenlabs-content">
+                    <div class="elevenlabs-icon">
+                        <i class="fas fa-volume-up"></i>
+                    </div>
+                    <div class="elevenlabs-text">
+                        <p><strong>ChatBonk: The First AI-Powered Meme Token on Solana</strong></p>
+                        <p>Voice powered by <a href="https://elevenlabs.io" target="_blank">ElevenLabs</a> - Bringing Bonk to life through advanced AI voice technology. Join our community on letsbonk.fun and be part of the next generation meme token revolution!</p>
+                        <a href="https://letsbonk.fun" target="_blank" class="letsbonk-button">
+                            <i class="fas fa-rocket"></i> View on letsbonk.fun
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="chat-messages" id="chat-messages">
+                <div class="message dog-message">
+                    <p>🐾 Woof! I'm Bonk, your doggy friend! Chat with me! (づ｡◕‿‿◕｡)づ 🦴✨</p>
+                </div>
+            </div>
+            <div class="chat-input">
+                <input type="text" id="user-input" placeholder="Say something to Bonk...">
+                <button id="send-btn">Send</button>
+            </div>
+            <div class="sound-controls">
+                <i class="fas fa-volume-up" style="margin-right: 8px;"></i>
+                <label for="volume-control">Volume:</label>
+                <input type="range" id="volume-control" min="0" max="1" step="0.1" value="0.5">
+                <span id="volume-value">50%</span>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 
